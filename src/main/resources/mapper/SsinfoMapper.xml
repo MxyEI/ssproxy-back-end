@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.project.dao.SsinfoMapper">
+  <resultMap id="BaseResultMap" type="com.company.project.model.Ssinfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="ipaddress" jdbcType="VARCHAR" property="ipaddress" />
+    <result column="port" jdbcType="INTEGER" property="port" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="method" jdbcType="VARCHAR" property="method" />
+    <result column="linodename" jdbcType="VARCHAR" property="linodename" />
+    <result column="qrcode" jdbcType="LONGVARCHAR" property="qrcode" />
+  </resultMap>
+</mapper>

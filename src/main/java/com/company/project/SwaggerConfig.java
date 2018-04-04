@@ -56,14 +56,14 @@ public class SwaggerConfig extends WebMvcConfigurerAdapter {
                 .required(false).build(); //非必需，这里是全局配置，然而在登陆的时候是不用验证的
         List<Parameter> aParameters = new ArrayList<Parameter>();
         aParameters.add(aParameterBuilder.build());
-        return new Docket(DocumentationType.SWAGGER_2).groupName("bug").select().apis(RequestHandlerSelectors.any())
-                .paths(PathSelectors.ant("/ztmdm/**")).build().apiInfo(apiInfo1()).globalOperationParameters(aParameters);
+        return new Docket(DocumentationType.SWAGGER_2).groupName("ssproxy").select().apis(RequestHandlerSelectors.any())
+                .paths(PathSelectors.ant("/ssinfo/**")).build().apiInfo(apiInfo1()).globalOperationParameters(aParameters);
     }
 
 
     private ApiInfo apiInfo1() {
         return new ApiInfoBuilder()
-                .title("tubiaoshow api")
+                .title("ssproxy api")
                 .termsOfServiceUrl("http://btorg.org")
                 .contact(new Contact("mxy","http://btorg.org","1486157956@qq.com"))
                 .version("v1.0.0")

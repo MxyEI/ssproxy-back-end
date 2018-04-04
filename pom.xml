@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.lihengming</groupId>
-    <artifactId>spring-boot-api-project-seed</artifactId>
+    <groupId>com.github.mxyei</groupId>
+    <artifactId>ssproxy-back-end</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
@@ -65,6 +65,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.40</version>
             <scope>runtime</scope>
         </dependency>
         <!--MyBatis 及 插件依赖-->
